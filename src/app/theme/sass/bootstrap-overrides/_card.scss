@@ -2,7 +2,7 @@ $card-title-height: 44px;
 $card-header-font-size: 16px;
 
 .card.card-blur {
-  $blurredBgUrl: '/img/blur-bg-blurred.jpg';
+  $blurredBgUrl: '/assets/img/blur-bg-blurred.jpg';
   background: url($blurredBgUrl);
   transition: none;
   background-attachment: fixed;
@@ -70,6 +70,10 @@ $card-header-font-size: 16px;
 .card-header, .card-footer {
   color: $content-text;
   border-bottom: $bootstrap-panel-header-border;
+
+  // NOTE: Added the property to match the blur admin
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.12);
+
   height: $card-title-height;
   font-size: $card-header-font-size;
   $vertical-padding: ($card-title-height - $card-header-font-size) / 2;
